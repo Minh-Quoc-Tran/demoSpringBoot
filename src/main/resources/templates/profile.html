@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+
+<label>Thông tin của tôi</label>
+<ul>
+<li th:each = "info: ${profile}" >
+    <span th:text = "*{info.key}" ></span> : <span th:text = "*{info.value}"></span>
+</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+    <meta http-equiv ="Content-Type" content ="text/html; charset=UTF-8" />
+    <link
+            th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+    <link th:href="@{/css/main.css}" rel="stylesheet"/>
+    <!--js-->
+    <script th:src ="@{/js/bootstrap.js}" ></script>
+
+</head>
+<body>
+<h1> Bạn đã Thêm/Xóa công việc thành công</h1>
+
+<a th:href = "@{/listTodo}" > Xem danh sách công việc</a>
+
+</body>
+</html>
